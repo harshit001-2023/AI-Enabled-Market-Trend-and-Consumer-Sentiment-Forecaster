@@ -54,18 +54,20 @@ AI-Market-Trend-Forecaster/
 └── requirements.txt           # Project dependencies
 ```
 
-🚀 Progress Log
-Phase 1: Data Ingestion & Setup
-Objective: Build scraping and ingestion layer.
+### Phase 1: Data Ingestion & Setup
+- **Objective:** Build scraping and ingestion layer.
+- **Status:** Completed ✅
+- **Tasks Completed:**
+    - [x] Defined Project Architecture.
+    - [x] Created Directory Structure.
+    - [x] Created `requirements.txt`.
+    - [x] Implemented `collect_redmi_data.py` (GoogleNews).
+    - [x] Collected initial dataset (30 records).
 
-Status: In Progress
-
-Tasks Completed:
-
-[x] Defined Project Architecture.
-
-[x] Created Directory Structure.
-
-[x] Created requirements.txt.
-
-[x] Implemented collect_redmi_data.py to fetch market news via GoogleNews.
+### Phase 2: Data Preprocessing
+- **Objective:** Clean raw data for AI models.
+- **Status:** In Progress
+- **Tasks:**
+    - [x] Move raw data to `data/raw/`.
+    - [x] Implement `cleaner.py` to remove noise (URLs, emojis, special chars).
+    - [ ] Create `cleaned_redmi_data.csv` in `data/processed/`.
