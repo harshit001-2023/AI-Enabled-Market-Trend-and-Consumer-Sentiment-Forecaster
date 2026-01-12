@@ -36,64 +36,36 @@ This project was collaboratively designed and implemented by:
 
 ---
 
-## ⚙️ Features
+# AI-Enabled Market Trend & Consumer Sentiment Forecaster
 
-* **Data Ingestion:** Automated fetching of stock market data (via APIs like Yahoo Finance) and scraping of relevant news/social media data.
-* **Preprocessing Pipeline:**
-    * *Text Cleaning:* Stop-word removal, tokenization, and lemmatization.
-    * *Data Normalization:* Scaling numerical data for model training.
-* **Sentiment Analysis Module:** Uses NLP techniques (e.g., VADER, TextBlob, or BERT) to score text data.
-* **Trend Prediction Model:** Implements algorithms such as LSTM (Long Short-Term Memory) or ARIMA for time-series forecasting.
-* **Interactive Dashboard:** Visualizes predictions vs. actuals and sentiment distribution over time.
+An AI-powered platform that aggregates social media posts, product reviews, and news data to generate real-time consumer trend and sentiment insights.
 
----
+## 📂 Project Structure
+```text
+AI-Market-Trend-Forecaster/
+├── data/                      # Data storage
+│   ├── raw/                   # Raw collected data (CSVs)
+│   └── processed/             # Cleaned data for AI
+├── src/                       # Source code
+│   ├── ingestion/             # Scripts to fetch data (Scrapy/APIs)
+│   ├── preprocessing/         # Cleaning & Normalization
+│   ├── models/                # AI Models (Sentiment, Topic, RAG)
+│   └── dashboard/             # Streamlit Frontend
+└── requirements.txt           # Project dependencies
+```
 
-## 🛠️ Tech Stack
+🚀 Progress Log
+Phase 1: Data Ingestion & Setup
+Objective: Build scraping and ingestion layer.
 
-* **Programming Language:** Python
-* **Data Analysis:** Pandas, NumPy
-* **Visualization:** Matplotlib, Seaborn, Plotly
-* **Machine Learning:** Scikit-learn, TensorFlow / Keras
-* **NLP:** NLTK, Spacy, Transformers (Hugging Face)
-* **IDE:** Jupyter Notebook / Google Colab
+Status: In Progress
 
----
+Tasks Completed:
 
-## 🚀 Installation & Usage
+[x] Defined Project Architecture.
 
-1.  **Clone the Repository:**
-    ```bash
-    git clone [https://github.com/your-username/market-trend-sentiment-forecaster.git](https://github.com/your-username/market-trend-sentiment-forecaster.git)
-    cd market-trend-sentiment-forecaster
-    ```
+[x] Created Directory Structure.
 
-2.  **Install Dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
+[x] Created requirements.txt.
 
-3.  **Run the Project:**
-    * For the notebook analysis:
-        ```bash
-        jupyter notebook
-        ```
-    * (Optional) If using a Streamlit/Flask app:
-        ```bash
-        streamlit run app.py
-        ```
-
----
-
-## 📊 Project Workflow
-
-1.  **Input:** User selects a stock ticker or product category.
-2.  **Processing:** System fetches the last 30-90 days of data and recent news.
-3.  **Analysis:** The model calculates a "Sentiment Score" and forecasts the "Trend Line."
-4.  **Output:** A graph displaying the predicted trend adjusted for current sentiment.
-
----
-
-## 📜 Acknowledgments
-
-* **Infosys SpringBoard** for providing the platform and learning resources.
-* **Mentors and Guides** for their valuable feedback during Internship 6.0.
+[x] Implemented collect_redmi_data.py to fetch market news via GoogleNews.

@@ -1,0 +1,15 @@
+# Data Ingestion
+GoogleNews
+pandas
+numpy
+scrapy
+
+# Web App & Dashboard
+streamlit
+plotly
+
+# Future AI Requirements (We will use these later)
+# langchain
+# pinecone-client
+# openai
+# bertopic
