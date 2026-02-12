@@ -1,15 +1,13 @@
-# Data Ingestion
-GoogleNews
+scrapy
 pandas
 numpy
-scrapy
-
-# Web App & Dashboard
+transformers
+torch  # For LLMs
+bertopic
+langchain
+pinecone-client
 streamlit
 plotly
-
-# Future AI Requirements (We will use these later)
-# langchain
-# pinecone-client
-# openai
-# bertopic
+openai  # If using GPT; or llama-index for Llama
+schedule  # For scheduling data collection
+smtplib  # For email alerts
